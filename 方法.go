@@ -1,21 +1,21 @@
-package main
+// package main
 
 // 方法总是绑定对象实例，并隐式将实例作为第一实参 (receiver)
 // 方法只能在同一个包内定义
 
 // func (receiver type) methodName(参数列表)(返回值列表){}
 
-type InstanceType struct {
-	Width, Height int
-}
+// type InstanceType struct {
+// 	Width, Height int
+// }
 
-func (i InstanceType) Area() int {
-	return i.Width * i.Height
-}
+// func (i InstanceType) Area() int {
+// 	return i.Width * i.Height
+// }
 
-func (i *InstanceType) Perimeter() int {
-	return 2 * (i.Width + i.Height)
-}
+// func (i *InstanceType) Perimeter() int {
+// 	return 2 * (i.Width + i.Height)
+// }
 
 // 方法的接收者可以是值类型或指针类型
 
